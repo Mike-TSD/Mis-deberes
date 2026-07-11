@@ -18,9 +18,44 @@
             <a href="#" class="btn">LECCION 1</a>
             <a href="#" class="btn">LECCION 2</a>
             <a href="#" class="btn">TRABAJO AUTÓNOMO</a>
-            <a href="#" class="btn">TRABAJO EN CLASE KOTLIN</a>
+           <button onclick="toggleVideo()" class="btn">TRABAJO EN CLASE KOTLIN</button>
+
+
+    <div id="seccion-video" style="display:none; margin-top: 20px; text-align: center;">
+        <h1 style="color: white;">EJERCICIO EN CLASE</h1>
+        <p style="color: white;">Objetivo: Realizar en la app que muestre en pantalla si el numero ingreso es Par o Impar</p>
+        <div class="contenedor-video-oscuro">
+            <iframe src="https://drive.google.com/file/d/1_Mo4QXqkfGAyLNnIct-szaxW21ad29H1/preview" 
+                    width="700" height="400" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+        </div>
+    </div>
+	<script>
+function toggleVideo() {
+    var seccion = document.getElementById("seccion-video");
+    if (seccion.style.display === "none") {
+        seccion.style.display = "block";
+    } else {
+        seccion.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
+
+button.btn {
+    display: inline-block;
+    background-color: #3b377d; /* Color igual a tus otros botones */
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 15px; /* Un pequeño espacio arriba */
+}
