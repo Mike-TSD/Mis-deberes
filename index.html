@@ -4,7 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Deberes - Programación</title>
+    
+    <!-- Enlace a tus estilos por si los usas en el futuro -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilos incrustados para asegurar que el fondo azul oscuro se vea perfecto siempre -->
+    <style>
+        body {
+            background-color: #111622; /* Color azul oscuro idéntico a tu captura */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            background-color: #171e2e; /* Tarjeta un poco más clara */
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+
+        .subtitulo {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #38bdf8;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: #2a2b4e; /* Botones azul/morado de tu captura */
+            color: white;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: #3b3d6e; /* Color más claro al pasar el cursor */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
 
@@ -15,13 +93,16 @@
         <h3>SELECCIONA EL TEMA 👇</h3>
 
         <div class="botones">
+            <!-- Enlazamos a tu nuevo archivo leccion1.html -->
             <a href="leccion1.html" class="btn">LECCION 1</a>
             <a href="#" class="btn">LECCION 2</a>
             <a href="#" class="btn">TRABAJO AUTÓNOMO</a>
-         <a href="ejercicio-kotlin.html" class="btn">TRABAJO EN CLASE KOTLIN</a>
-            
+            <!-- Tu botón de Kotlin intacto apuntando a tu archivo de Kotlin -->
+            <a href="ejercicio-kotlin.html" class="btn">TRABAJO EN CLASE KOTLIN</a>
         </div>
     </div>
 
 </body>
 </html>
+```
+eof
